@@ -60,7 +60,7 @@
             }
         }
         
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 1200px) {
             .text {
                 font-size: 11px
             }
@@ -70,7 +70,7 @@
             }
         }
         
-        @media only screen and (max-height: 600px) {
+        @media only screen and (max-height: 610px) {
             .text {
                 font-size: 15px;
                 width: 1200.rem;
@@ -80,11 +80,6 @@
     </style>
 </head>
 <from action="index2.html" method="get">
-
-
-
-
-
 
 
 
@@ -230,19 +225,19 @@
 
             <div class="mySlides fade">
                 <div class="numbertext"></div>
-                <img src="C:\xampp\htdocs\RP_tecchmedia_project\images_rptech\rptech_img2.jpg" style="width:100%" height="100%">
+                <img src="C:\xampp\htdocs\RP_tecchmedia_project\rptech_img2.jpg" style="width:100%" height="100%">
 
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext"></div>
-                <img src="C:\xampp\htdocs\RP_tecchmedia_project\images_rptech\rptech_event_img.jpg" style="width:100%" height="100%">
+                <img src="C:\xampp\htdocs\RP_tecchmedia_project\rptech_event_img.jpg" style="width:100%" height="100%">
 
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext"></div>
-                <img id="img3" src="C:\xampp\htdocs\RP_tecchmedia_project\images_rptech\rptech_event_img2.jpg" style="width:100%" height="100%">
+                <img id="img3" src="C:\xampp\htdocs\RP_tecchmedia_project\rptech_event_img2.jpg" style="width:100%" height="100%">
 
             </div>
 
@@ -255,7 +250,9 @@
         </div>
 
         <marquee style="color:red;"> Thank You for Visit This Website</marquee>
-        </form>
+
+
+
 
 
 
@@ -263,33 +260,37 @@
 
 
 
+</from>
 
 
 
 
-    <script>
-        let slideIndex = 0;
-        showSlides();
 
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 3000);
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
         }
-    </script>
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 3000);
+    }
+</script>
+
+
 
 
 </html>
