@@ -9,31 +9,31 @@
         height: 50%;
         position: relative;
         color: white;
-        margin-top: -14px;
+        margin-top: 14px;
         background-color: white;
     }
     
     .top-left {
         position: absolute;
-        top: 38%;
+        top: 22%;
         left: 50%;
-        transform: translate(-185%, -185%);
+        transform: translate(-195%, -185%);
         color: red;
         font-size: 16px;
     }
     
     .top-right {
         position: absolute;
-        top: 40%;
-        left: 30%;
+        top: 25%;
+        left: 20%;
         font-size: 16px;
         color: blue;
-        transform: translate(-120%, -120%);
+        transform: translate(-60%, -170%);
     }
     
     .gbtn {
         position: absolute;
-        top: 80%;
+        top: 60%;
         left: 30%;
         font-size: 16px;
         color: white;
@@ -42,7 +42,7 @@
     
     .top-bottom {
         position: absolute;
-        top: 38%;
+        top: 23%;
         left: 31%;
         font-size: 16px;
         color: blue;
@@ -51,7 +51,7 @@
     
     .top-center {
         position: absolute;
-        top: 60%;
+        top: 43%;
         left: 30%;
         font-size: 16px;
         color: white;
@@ -203,7 +203,7 @@
         color: white;
     }
     
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 952px) {
         body {
             background-color: black;
         }
@@ -211,31 +211,40 @@
     
     @media only screen and (max-width: 600px) {
         body {
-            background-color: black;
-        }
-        .top-right {
-            font-size: 12px;
-            top: 155px;
-            transform: translate(-110%, -120%);
-        }
-        .top-bottom {
-            font-size: 12px;
-            top: 145px;
-            transform: translate(-20%, -40%);
-        }
-        .top-center {
-            font-size: 12px;
-            top: 220px;
-            transform: translate(-45%, -45%);
-        }
-        .gbtn {
-            font-size: 12px;
-            top: 300px;
-            transform: translate(0%, 0%);
+            background-color: white;
         }
         .top-left {
             font-size: 12px;
             top: 150px;
-            transform: translate(-170%, -190%);
+            transform: translate(-170%, -180%);
+        }
+        .top-right {
+            font-size: 12px;
+            top: 158px;
+            transform: translate(-60%, -160%);
+        }
+        .top-bottom {
+            font-size: 12px;
+            top: 150px;
+            transform: translate(-150%, 10%);
+        }
+        .top-center {
+            font-size: 12px;
+            top: 220px;
+            transform: translate(-35%, -35%);
+        }
+        .gbtn {
+            font-size: 10px;
+            top: 300px;
+            transform: translate(10%, 10%);
+        }
+        nav ul li a {
+            line-height: 100px;
+            color: #fff;
+            padding: 10px 30px;
+            text-decoration: none;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
         }
     }

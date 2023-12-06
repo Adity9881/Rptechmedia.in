@@ -110,7 +110,7 @@
                     <li><a href="About.html">About</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="Event.html">Events</a></li>
-                    <li><a href="https://www.rptechmedia.com/career/">Career</a></li>
+                    <li><a href="career.html">Career</a></li>
                 </ul>
         </nav>
 
@@ -144,11 +144,9 @@
 
 
 
+        <img src="C:\xampp\htdocs\RP_tecchmedia_project\Background_img.png" alt="" width="100%" height="100%">
 
 
-        <section>
-            <img src="C:\xampp\htdocs\RP_tecchmedia_project\Background_img.jpg" width="100%" height="100%">
-        </section>
 
 
         <style>
@@ -160,12 +158,12 @@
             
             nav {
                 position: absolute;
-                top: 5%;
+                top: 0%;
                 left: 0%;
                 width: 100%;
                 height: 100%;
                 box-sizing: border-box;
-                background: rgb(0, 0, 0, 0.6);
+                background: rgb(0, 0, 0, 0.7);
                 border-bottom: 2px solid #fff;
                 position: absolute;
             }
@@ -173,9 +171,11 @@
             nav ul {
                 list-style: none;
                 float: right;
-                margin: 3;
-                padding: -2%;
+                margin: 0;
+                padding: 2.2%;
                 display: flex;
+                background-color: red;
+                border-radius: 30px;
             }
             
             nav ul li a {
@@ -183,7 +183,7 @@
                 color: #fff;
                 padding: 12px 30px;
                 text-decoration: none;
-                font-size: 10px;
+                font-size: 12px;
                 font-weight: bold;
                 text-transform: uppercase;
             }
@@ -193,14 +193,8 @@
                 border-radius: 16px;
             }
             
-            section {
-                margin-top: 3%;
-                margin: -1%;
-                width: 100%;
-                height: 100%;
-                background: url(Background_img.jpg);
-                background-size: cover;
-                background-position: center;
+            a:hover {
+                background-color: blue;
             }
             
             .mySlides,
@@ -216,40 +210,49 @@
 
 
 
-
-
-
-
-
         <div class="slideshow-container">
 
             <div class="mySlides fade">
                 <div class="numbertext"></div>
-                <img src="C:\xampp\htdocs\RP_tecchmedia_project\rptech_img2.jpg" style="width:100%" height="100%">
+                <img src="rptech_img2.png" style="width:100%" height="100%">
 
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext"></div>
-                <img src="C:\xampp\htdocs\RP_tecchmedia_project\rptech_event_img.jpg" style="width:100%" height="100%">
+                <img src="rptech_event_img.png" style=" width:100% " height="100% ">
 
             </div>
 
-            <div class="mySlides fade">
-                <div class="numbertext"></div>
-                <img id="img3" src="C:\xampp\htdocs\RP_tecchmedia_project\rptech_event_img2.jpg" style="width:100%" height="100%">
+            <div class="mySlides fade ">
+                <div class="numbertext "></div>
+                <img id="img3 " src="rptech_event_img2.png" style="width:100% " height="100% ">
+
+            </div>
+
+            <div class="mySlides fade ">
+                <div class="numbertext "></div>
+                <img src="Slid_img4.png" style="width:100% " height="100% ">
 
             </div>
 
         </div>
         <br>
-        <div style="text-align:center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+        <div style="text-align:center ">
+            <span class="dot "></span>
+            <span class="dot "></span>
+            <span class="dot "></span>
+            <span class="dot "></span>
         </div>
 
-        <marquee style="color:red;"> Thank You for Visit This Website</marquee>
+
+        <marquee style="color:red; "> Thank You for Visit This Website</marquee>
+
+
+
+
+
+
 
 
 
@@ -272,21 +275,21 @@
 
     function showSlides() {
         let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
+        let slides = document.getElementsByClassName("mySlides ");
+        let dots = document.getElementsByClassName("dot ");
         for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+            slides[i].style.display = "none ";
         }
         slideIndex++;
         if (slideIndex > slides.length) {
             slideIndex = 1
         }
         for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+            dots[i].className = dots[i].className.replace(" active ", " ");
         }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 3000);
+        slides[slideIndex - 1].style.display = "block ";
+        dots[slideIndex - 1].className += " active ";
+        setTimeout(showSlides, 2000);
     }
 </script>
 
